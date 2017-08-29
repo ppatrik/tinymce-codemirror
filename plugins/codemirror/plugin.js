@@ -19,7 +19,7 @@ tinymce.PluginManager.add('codemirror', function(editor, url) {
         
         // Insert caret marker
         if (editor.settings.codemirror.saveCursorPosition) {
-            editor.selection.setContent('<span style="display: none;" class="CmCaReT">&#x0;</span>');
+            editor.selection.setContent('<span class="CmCaReT" style="display: none;">&#x0;</span>');
         }
 
         var codemirrorWidth = 800;
