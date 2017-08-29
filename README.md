@@ -48,6 +48,13 @@ Installation
 
 8. Test: You should see a Source code item in the Tools menu. Click it to edit
    the HTML source code.
+   
+### NPM Install
+
+```bash
+npm install git@github.com:ppatrik/tinymce-codemirror.git --save
+npm install codemirror --save
+```
 
 Configuration
 -------------
