@@ -22,19 +22,24 @@ tinymce.PluginManager.add('codemirror', function(editor, url) {
             editor.selection.setContent('<span style="display: none;" class="CmCaReT">&#x0;</span>');
         }
 
-        codemirrorWidth = 800;
+        var codemirrorWidth = 800;
         if (editor.settings.codemirror.width) {
             codemirrorWidth = editor.settings.codemirror.width;
         }
 
-        codemirrorHeight = 550;
+        var codemirrorHeight = 550;
         if (editor.settings.codemirror.width) {
             codemirrorHeight = editor.settings.codemirror.height;
         }
+
+        var sourceFile = url + '/source.html';
+        if(editor.settings.codemirror.sourceFile) {
+            sourceFile = editor.settings.codemirror.sourceFile;
+		}
         
 		var config = {
 			title: 'HTML source code',
-			url: url + '/source.html',
+			url: sourceFile,
 			width: codemirrorWidth,
 			height: codemirrorHeight,
 			resizable : true,
